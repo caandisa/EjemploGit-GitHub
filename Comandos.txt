@@ -1,0 +1,116 @@
+Ctrl - ñ --> Abre en terminal la ubicación actual
+
+git init --> Se hace una vez . Inicializa el repositorio
+
+Windows PowerShell
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git init
+Initialized empty Git repository in C:/Users/usuario/Documents/Desarrollo Web con Python/GitHub/EjemploGit-GitHub/.git/
+
+git status -s --> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+?? Comandos.txt
+?? estilos.css
+?? funciones.js
+?? index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub>
+
+
+git add index.html --> Agregar un archivo al staging area o área de trabajo
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git add index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+?? funciones.js
+?? index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git add index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+A  index.html
+?? Comandos.txt
+?? estilos.css
+?? funciones.js
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git add .
+
+git add . --> Me agrega todos los archivos al staging area o área de trabajo.
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+AM Comandos.txt
+A  estilos.css
+A  funciones.js
+A  index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git commit -m "Primer envio"
+Author identity unknown
+
+*** Please tell me who you are.
+Run
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git commit -m "Primer envio"      
+[master (root-commit) 62aca8e] Primer envio
+ 4 files changed, 15 insertions(+)
+ create mode 100644 Comandos.txt
+ create mode 100644 estilos.css
+ create mode 100644 funciones.js
+ create mode 100644 index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+ D Comandos.txt
+ M index.html
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git add .
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git commit -m "agregamos etiqueta 
+h2"
+[master af50cf1] agregamos etiqueta h2
+ 2 files changed, 1 insertion(+), 4 deletions(-)
+ delete mode 100644 Comandos.txt
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+?? Comandos.txt
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git add .
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git commit -m "agregamos archivo comandos.txt"
+[master bb6950e] agregamos archivo comandos.txt
+ 1 file changed, 71 insertions(+)
+ create mode 100644 Comandos.txt
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git status -s
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+git log --oneline 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git log --oneline
+bb6950e (HEAD -> master) agregamos archivo comandos.txt
+af50cf1 agregamos etiqueta h2
+62aca8e Primer envio
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git reset --hard 62aca8e
+HEAD is now at 62aca8e Primer envio
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+git reset --hard af50cf1 --> para volver a la versión de la cadena de caracteres.
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git reset --hard af50cf1
+HEAD is now at af50cf1 agregamos etiqueta h2
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> 
+
+
+https://github.com/ 
+
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git remote add origin https://github.com/caandisa/EjemploGit-GitHub.git
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git branch -M main
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 863 bytes | 172.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/caandisa/EjemploGit-GitHub.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\usuario\Documents\Desarrollo Web con Python\GitHub\EjemploGit-GitHub>                        
