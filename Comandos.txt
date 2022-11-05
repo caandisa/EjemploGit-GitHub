@@ -1,0 +1,3 @@
+Ctrl - ñ --> Abre en terminal la ubicación actual
+
+git init --> Se hace una vez . Inicializa el repositorio
